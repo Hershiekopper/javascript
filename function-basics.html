@@ -7,7 +7,36 @@
 </head>
 <body>
     <script>
-        function add7
+        function add7(number){
+            return number + 7;
+        }
+
+        // Example Usage
+        console.log(add7(4)); // Output: 10
+
+        function multiply(n1, n2) {
+            return n1 * n2;
+        }
+
+        console.log(multiply(37,2)) // Output: 74
+
+        function capitalize(string) {
+            if (string.length === 0) return "";
+            return string[0].toUpperCase() + string.slice(1).toLowerCase();
+        }
+
+        console.log(capitalize("fantty"))
+
+        // I want the function to take the string in the brackets, make the first letter 
+        // uppercase and the following letters lower case regardless of the case of the inputted
+        // string's letters' cases
+        //slice() takes everything past that index, slice[] extracts that single character
+
+        function lastletter(string) {
+            return string.slice(-1);
+        }
+
+        console.log(lastletter("time"))
     </script>
 </body>
 </html>
